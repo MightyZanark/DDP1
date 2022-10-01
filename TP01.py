@@ -1,14 +1,3 @@
-# Name: Juan Maxwell Tanaya
-# NPM : 2206820352
-# Melalui comment singkat ini, saya ingin memberitahu bahwa saya adalah
-# kolaborator dari:
-# 1. Tengku Laras Malahayati  - 2206081641
-# 2. Caressa Putri Yuliantoro - 2206081742
-# Oleh karena itu, mungkin ada persamaan antara code saya dengan 
-# code mereka
-# Sekian dari saya, terimakasih atas perhatiannya
-#######################################################################
-
 import turtle as t
 from random import randint
 from tkinter import messagebox
