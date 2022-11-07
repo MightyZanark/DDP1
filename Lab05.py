@@ -73,14 +73,14 @@ def main():
     Balok = Cuboid
     Kerucut = Cone
     """
-    
+
     print("\nSelamat datang di Depot Minuman Dek Depe!\n"
           f"{'=' * 42}")
 
     stop = False
     total_volume = 0
     total_price = 0
-    
+
     # While loop to ask for the gallon's shape until stopped with
     # sentinel value "STOP"
     while not stop:
@@ -90,7 +90,7 @@ def main():
 
         # While loop to validate the input
         while gallon_shape != "BALOK" and gallon_shape != "KERUCUT" \
-            and gallon_shape != "STOP":
+                and gallon_shape != "STOP":
             print("Input tidak benar, masukkan kembali\n")
 
             gallon_shape = input("Masukkan bentuk galon yang diinginkan "
@@ -102,13 +102,13 @@ def main():
             volume = cuboid_volume(length, width, height)
             total_volume += volume
             total_price += volume * PRICE_PER_VOLUME
-        
+
         elif gallon_shape == "KERUCUT":
             radius, height = get_cone_size()
             volume = cone_volume(radius, height)
             total_volume += volume
             total_price += volume * PRICE_PER_VOLUME
-        
+
         else:
             stop = True
 
@@ -117,9 +117,9 @@ def main():
               f"Total volume air yang dikeluarkan adalah: {total_volume:.2f}\n"
               f"Total harga yang harus dibayar adalah: Rp{total_price:.2f}\n"
               f"{'=' * 52}")
-        
+
         print("\nTerima kasih telah menggunakan Depot Air Minum Dek Depe")
-    
+
     else:
         print(f"\n\n{'=' * 52}\n"
               "Anda tidak memasukkan input satupun :(\n"
